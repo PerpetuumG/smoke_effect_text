@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+   }
+   .text {
+    color:#fff;
+    font-size: 150px;
+    position: absolute;
+    top:75%;
+    left:100%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    display: flex;
+    text-shadow: 2px 2px 2px #000;
+   }
+   .text:hover span {
+    animation: smoke 2s linear forwards;
+   }
+   @keyframes smoke {
+    100% {
+     opacity: 0;
+     filter: blur(40px);
+     transform: rotate(25deg) translateY(-200px);
+    }
+   }
+   .text span:nth-child(1) {
+    animation-delay: 2s;
+   }
+   .text span:nth-child(2) {
+    animation-delay: 1.6s;
+   }
+   .text span:nth-child(3) {
+    animation-delay: 1.2s;
+   }
+   .text span:nth-child(4) {
+    animation-delay: 0.8s;
+   }
+   .text span:nth-child(5) {
+    animation-delay: 0.4s;
+   }
